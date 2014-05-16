@@ -3,13 +3,21 @@
  * Project: NAVER :: 네이버 로그인(oauth2) pear package<br>
  * File:    NAVER.php<br>
  * Dependency:
- *
  *   - {@link http://pear.oops.org/docs/li_HTTPRelay.html oops/HTTPRelay}
  *   - {@link http://pear.oops.org/docs/li_myException.html oops/myException}
  *   - {@link http://kr1.php.net/manual/en/book.curl.php curl extension}
  *
- * 네이버 로그인 pear package는 oauth2 protocol을 사용하여 네이버 로그인
- * 정보를 이용하여 회원 관리를 할 수 있게 해 준다.
+ * oops/NAVER pear package는
+ * {@link http://developer.naver.com/wiki/pages/NaverLogin 네이버 아이디로 로그인}
+ * 을 pear package로 구현을 한 것이다.
+ *
+ * {@link http://developer.naver.com/wiki/pages/NaverLogin 네이버 아이디로 로그인}은
+ * {@link http://developer.naver.com/wiki/pages/OAuth2 네이버 OAuth}와는 다른 API로서
+ * 로그인 사용자의 개인 식별 정보를 활용할 수 있으며, OAuth2 방식으로 구현이 되어있다.
+ *
+ * 이 package를 사용하기 위해서는 먼저 Naver에서 ClientID와 ClientSecret을 발급받아야
+ * 한다. http://developer.naver.com/wiki/pages/NaverLogin 를 참고하라.
+ *
  *
  * @category  HTTP
  * @package   NAVER
@@ -19,7 +27,7 @@
  * @version   SVN: $Id$
  * @link      http://pear.oops.org/package/NAVER
  * @since     File available since release 1.0.0
- * @example   pear_NAVER/tests/test.php sample for oops/NAVER pear package
+ * @example   pear_NAVER/tests/test.php NAVER pear package 예제 코드
  * @filesource
  */
 
@@ -30,7 +38,10 @@ require_once 'HTTPRelay.php';
 
 
 /**
- * Naver API의 main class
+ * Naver pear pcakge의 main class
+ *
+ * OAuth2를 이용하여 네이버 로그인을 진행하고, 로그인된 사용자의
+ * 정보를 얻어온다.
  *
  * @package NAVER
  * @author    JoungKyun.Kim <http://oops.org>

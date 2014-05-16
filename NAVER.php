@@ -3,17 +3,13 @@
  * Project: NAVER :: 네이버 로그인(oauth2) pear package<br>
  * File:    NAVER.php<br>
  * Dependency:
- *   {@link http://pear.oops.org/docs/li_HTTPRelay.html oops/HTTPRelay}
- *   {@link http://pear.oops.org/docs/li_myException.html oops/myException}
- *   {@link http://kr1.php.net/manual/en/book.curl.php curl extension}
+ *
+ *   - {@link http://pear.oops.org/docs/li_HTTPRelay.html oops/HTTPRelay}
+ *   - {@link http://pear.oops.org/docs/li_myException.html oops/myException}
+ *   - {@link http://kr1.php.net/manual/en/book.curl.php curl extension}
  *
  * 네이버 로그인 pear package는 oauth2 protocol을 사용하여 네이버 로그인
  * 정보를 이용하여 회원 관리를 할 수 있게 해 준다.
- *
- * 이 패키지를 사용하기 위해서는 시스템에 다음의 패키지가 필요하다.
- *
- * oops pear package
- * curl php extension
  *
  * @category  HTTP
  * @package   NAVER
@@ -23,6 +19,7 @@
  * @version   SVN: $Id$
  * @link      http://pear.oops.org/package/NAVER
  * @since     File available since release 1.0.0
+ * @example   pear_NAVER/tests/test.php sample for oops/NAVER pear package
  * @filesource
  */
 
@@ -35,7 +32,14 @@ require_once 'HTTPRelay.php';
 /**
  * Naver API의 main class
  *
- * @package naver
+ * @package NAVER
+ * @author    JoungKyun.Kim <http://oops.org>
+ * @copyright (c) 2014 OOPS.org
+ * @license   BSD License
+ * @version   SVN: $Id$
+ * @link      http://pear.oops.org/package/NAVER
+ * @since     File available since release 1.0.0
+ * @example   pear_NAVER/tests/test.php NAVER pear 예제 코드
  */
 Class NAVER {
 	// {{{ properities
@@ -64,11 +68,10 @@ Class NAVER {
 	private $reqUser  = 'https://apis.naver.com/nidlogin/nid/getUserProfile.xml';
 	/**
 	 * consumer information
-	 * stdClass member
+	 * @var stdClass memebr는 다음과 같음
 	 *   - id     : Naver login CliendID key
 	 *   - secret : Naver login ClientSecret key
 	 *   - callback : 이 class를 호출하는 페이지
-	 * @var stdClass
 	 */
 	private $consumer;
 	/**#@-*/
@@ -87,7 +90,7 @@ Class NAVER {
 	 * 보낸다.
 	 *
 	 * @access public
-	 * @param stdClass
+	 * @param stdClass $v
 	 *   - id       발급받은 Naver login ClientID key
 	 *   - secret   발급받은 Naver login ClientScret key
 	 *   - callback 이 클래스가 호출되는 url
@@ -224,10 +227,10 @@ Class NAVER {
 	// {{{ +-- public (stdClass) getUser (void)
 	/**
 	 * 로그인 과정이 완료되면 발급받은 NAVER::$sess->oauth 에 등록된
-	 * 키를 이요하여 로그인 사용자의 정보를 가져온다.
+	 * 키를 이용하여 로그인 사용자의 정보를 가져온다.
 	 *
 	 * @access public
-	 * @return stdClass
+	 * @return stdClass 다음의 object를 반환
 	 *   - id       사용자 확인 값
 	 *   - nickname 사용자 닉네임
 	 *   - email    이메일(ID@naver.com)

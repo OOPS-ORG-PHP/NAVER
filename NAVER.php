@@ -161,6 +161,7 @@ Class NAVER {
 		);
 
 		Header ('Location: ' . $url);
+		exit;
 	}
 	// }}}
 

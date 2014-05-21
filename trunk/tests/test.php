@@ -6,6 +6,8 @@ require_once 'NAVER.php';
 // 에러 발생시에 catch를 하기 위하여 error handler를 등록
 set_error_handler ('myException::myErrorHandler');
 
+session_start ();
+
 try {
 	// 발급받은 키를 등록한다.
 	$login = (object) array (

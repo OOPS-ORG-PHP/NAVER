@@ -18,6 +18,10 @@
  * 이 package를 사용하기 위해서는 먼저 Naver에서 ClientID와 ClientSecret을 발급받아야
  * 한다. http://developer.naver.com/wiki/pages/NaverLogin 를 참고하라.
  *
+ * !!참고
+ * oops/NAVER pear package는 더이상 개발되지 않습니다.
+ * {@link http://pear.oops.org/docs/li_oops-OAUTH2.html oops/OAUTH2 package}를
+ * 사용하시기 바랍니다.
  *
  * @category  HTTP
  * @package   NAVER
@@ -42,6 +46,11 @@ require_once 'HTTPRelay.php';
  *
  * OAuth2를 이용하여 네이버 로그인을 진행하고, 로그인된 사용자의
  * 정보를 얻어온다.
+ *
+ * !!참고
+ * oops/NAVER pear package는 더이상 개발되지 않습니다.
+ * {@link http://pear.oops.org/docs/li_oops-OAUTH2.html oops/OAUTH2 package}를
+ * 사용하시기 바랍니다.
  *
  * @package NAVER
  * @author    JoungKyun.Kim <http://oops.org>

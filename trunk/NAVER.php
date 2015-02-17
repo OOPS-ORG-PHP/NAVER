@@ -26,7 +26,7 @@
  * @category  HTTP
  * @package   NAVER
  * @author    JoungKyun.Kim <http://oops.org>
- * @copyright (c) 2014 OOPS.org
+ * @copyright (c) 2015 OOPS.org
  * @license   BSD License
  * @version   SVN: $Id$
  * @link      http://pear.oops.org/package/NAVER
@@ -54,7 +54,7 @@ require_once 'HTTPRelay.php';
  *
  * @package NAVER
  * @author    JoungKyun.Kim <http://oops.org>
- * @copyright (c) 2014 OOPS.org
+ * @copyright (c) 2015 OOPS.org
  * @license   BSD License
  * @version   SVN: $Id$
  * @link      http://pear.oops.org/package/NAVER

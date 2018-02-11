@@ -20,11 +20,11 @@
 
 1. 수동 설치
 
-  * https://github.com/OOPS-ORG-PHP/NAVER/release 에서 가장 마지막 버전을 다운로드 받습니다.
-  * PHP의 include_path 에 포함되는 위치에 압축을 풀어 놓습니다.
-  * 이 패키지를 사용하기 위해서는 다음의 package가 필요 합니다.
-    * myException at https://github.com/OOPS-ORG-PHP/myException/releases/
-    * HTTPRelay at https://github.com/OOPS-ORG-PHP/HTTPRelay/releases/
+    * https://github.com/OOPS-ORG-PHP/NAVER/release 에서 가장 마지막 버전을 다운로드 받습니다.
+    * PHP의 include_path 에 포함되는 위치에 압축을 풀어 놓습니다.
+    * 이 패키지를 사용하기 위해서는 다음의 package가 필요 합니다.
+        * myException at https://github.com/OOPS-ORG-PHP/myException/releases/
+        * HTTPRelay at https://github.com/OOPS-ORG-PHP/HTTPRelay/releases/
 
 
 ## Reference

@@ -26,12 +26,11 @@
  * @category  HTTP
  * @package   NAVER
  * @author    JoungKyun.Kim <http://oops.org>
- * @copyright (c) 2015 OOPS.org
+ * @copyright (c) 2018, OOPS.org
  * @license   BSD License
- * @version   SVN: $Id$
  * @link      http://pear.oops.org/package/NAVER
  * @since     File available since release 1.0.0
- * @example   pear_NAVER/tests/test.php NAVER pear package 예제 코드
+ * @example   NAVER/tests/test.php NAVER pear package 예제 코드
  * @filesource
  */
 
@@ -54,12 +53,11 @@ require_once 'HTTPRelay.php';
  *
  * @package NAVER
  * @author    JoungKyun.Kim <http://oops.org>
- * @copyright (c) 2015 OOPS.org
+ * @copyright (c) 2018, OOPS.org
  * @license   BSD License
- * @version   SVN: $Id$
  * @link      http://pear.oops.org/package/NAVER
  * @since     File available since release 1.0.0
- * @example   pear_NAVER/tests/test.php NAVER pear 예제 코드
+ * @example   NAVER/tests/test.php NAVER pear 예제 코드
  */
 Class NAVER {
 	// {{{ properities
